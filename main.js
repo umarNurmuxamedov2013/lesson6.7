@@ -8,7 +8,7 @@ async function fetchComments() {
   
       const comments = await response.json();
       displayComments(comments.slice(0, 20));
-      return comments; 
+
     } catch (error) {
     //   console.log("fetch error :", error);
       throw error;
